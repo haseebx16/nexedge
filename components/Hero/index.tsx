@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
+import Link from "next/link";
 
 const Hero = () => {
   const [email, setEmail] = useState("");
@@ -35,12 +36,14 @@ const Hero = () => {
               <div className="mt-10">
                 <form onSubmit={handleSubmit}>
                   <div className="flex flex-wrap gap-5">
-                    <button
-                      aria-label="get started button"
-                      className="flex rounded-full bg-black px-7.5 py-2.5 text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark dark:hover:bg-blackho"
-                    >
-                      Get A Qoute
-                    </button>
+                    <Link href="/support">
+                      <button
+                        aria-label="get started button"
+                        className="flex rounded-full bg-black px-7.5 py-2.5 text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark dark:hover:bg-blackho"
+                      >
+                        Get A Qoute
+                      </button>
+                    </Link>
                   </div>
                 </form>
               </div>
