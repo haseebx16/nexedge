@@ -11,7 +11,7 @@ const Nav = () => {
 
   useEffect(() => {
     const path = window.location.pathname;
-    setActiveLink(path);  // Set the active link based on the current path
+    setActiveLink(path);
   }, []);  
 
   const toggleMenu = () => {
@@ -21,15 +21,15 @@ const Nav = () => {
   return (
     <div className="flex justify-center mb-12 text-white items-center flex-wrap bg-green-100">
       <header
-        className={`${font2.className} w-full fixed shadow-md shadow-black bg-white backdrop-blur-lg top-0 flex-wrap p-6 bg-opacity-100 text-black`}
+        className={`${font2.className} w-full fixed shadow-md shadow-black bg-white bg-opacity-90 backdrop-blur-lg top-0 flex-wrap p-6  text-black`}
       >
         <nav className="flex items-center justify-between px-8">
           <div className="flex items-center">
-            <img src="/logo.png" alt="Logo" className="w-auto h-10 md:h-14 fixed" />
+            <img src="/logo.png" alt="Logo" className="w-auto h-10 sm:h-10 md:h-10 lg:h-14 fixed" />
           </div>
 
           {/* Hamburger icon for mobile */}
-          <div className="sm:hidden flex items-center">
+          <div className="md:hidden flex items-center">
             <button onClick={toggleMenu} className="text-black focus:outline-none">
               {isOpen ? (
                 <svg
@@ -69,11 +69,10 @@ const Nav = () => {
           <div
             className={`${
               isOpen
-                ? "flex flex-col items-center justify-center h-screen fixed inset-0 bg-white z-50 sm:hidden"
+                ? "flex flex-col items-center justify-center h-screen fixed inset-0 bg-white z-50 md:hidden"
                 : "hidden"
             }`}
           >
-            {/* Logo at the top-left */}
             <div className="absolute top-0 left-0 p-4">
               <img src="/logo.png" alt="Logo" className="w-auto h-10" />
             </div>
@@ -103,7 +102,7 @@ const Nav = () => {
               {navLinks.map((item) => (
                 <span
                   key={item.label}
-                  className="block py-4 font-bold text-2xl cursor-pointer"
+                  className={`${activeLink === item.href ? "border-b-2 border-cyan-800" : ""} block py-4 font-bold text-2xl cursor-pointer`}
                 >
                   <Link href={item.href}>{item.label}</Link>
                 </span>
@@ -112,13 +111,13 @@ const Nav = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className={`hidden sm:flex justify-between items-center flex-col sm:flex-row sm:space-x-16 md:space-x-16`}>
+          <div className={`hidden md:flex justify-between items-center flex-col md:flex-row md:space-x-16`}>
             {navLinks.map((item) => (
               <span
                 key={item.label}
                 className={`${
                   activeLink === item.href ? "border-b-2 border-cyan-800" : ""
-                } block text-md py-2 font-bold sm:py-0 cursor-pointer hover:border-b-2 hover:border-cyan-800`}
+                } block text-md py-2 font-bold md:py-0 cursor-pointer hover:border-b-2 hover:border-cyan-800`}
               >
                 <Link href={item.href}>{item.label}</Link>
               </span>
