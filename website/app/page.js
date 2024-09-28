@@ -1,5 +1,6 @@
 import Hero from "./components/Hero";
 import Nav from "./components/Navbar";
+import WebsiteDesign from "./components/Website-Design";
 
 export default function Home() {
   return (
@@ -9,6 +10,9 @@ export default function Home() {
         </section>
         <section>
           <Hero/>
+        </section>
+        <section>
+          <WebsiteDesign/>
         </section>
       </>
   );

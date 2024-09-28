@@ -11,3 +11,8 @@
 .gradient-nav {
     background: radial-gradient(circle at center, #152f4e 0%, #0a2344 30%, #071a36 70%, #051227 100%);
 }
+
+.gradient-website {
+    background: radial-gradient(circle at center, #204a7c 0%, #0e305e 30%, #0b2b5a 70%, #092046 100%);
+    width: 100%;
+  }
