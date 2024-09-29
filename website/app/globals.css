@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 .gradient-bg {
-    background: radial-gradient(circle at center, #152f4e 0%, #0a2344 30%, #071a36 70%, #051227 100%);
-    min-height: 100vh;
+    background: radial-gradient(circle at center, #ffffff 0%, #d7e8ff 30%, #dbeaff 70%, #ffffff 100%);
+    
     width: 100%;
 }
 
 .gradient-nav {
-    background: radial-gradient(circle at center, #152f4e 0%, #0a2344 30%, #071a36 70%, #051227 100%);
+    background: radial-gradient(circle at center, #ffffff 0%, #a7cdff 30%, #dbeaff 70%, #ffffff 100%);
 }
 
 .gradient-website {

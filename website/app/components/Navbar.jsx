@@ -19,19 +19,19 @@ const Nav = () => {
   };
 
   return (
-    <div className="flex justify-center mb-12 text-white items-center flex-wrap bg-green-100">
+    <div className="flex justify-center mb-12 text-black items-center z-50 flex-wrap bg-green-100">
       <header
-        className={`${font2.className} w-full fixed shadow-md shadow-black gradient-nav bg-opacity-90 backdrop-blur-lg top-0 flex-wrap p-7 text-black`}
+        className={`${font2.className} w-full fixed shadow-md shadow-black z-50 gradient-nav bg-opacity-90 backdrop-blur-lg top-0 flex-wrap p-7 text-black`}
       >
         <nav className="flex items-center justify-between px-8">
           <div className="flex items-center">
             {/* <img src="/logo.png" alt="Logo" className="w-auto h-10 sm:h-10 md:h-10 lg:h-14 fixed" /> */}
-            <p className="text-white text-4xl font-bold">Nexedge  <span className="text-cyan-400">Solution</span></p>
+            <p className="text-black text-4xl font-bold">Nexedge  <span className="text-cyan-600">Solution</span></p>
           </div>
 
           {/* Hamburger icon for mobile */}
           <div className="md:hidden flex items-center">
-            <button onClick={toggleMenu} className="text-white focus:outline-none">
+            <button onClick={toggleMenu} className="text-black focus:outline-none">
               {isOpen ? (
                 <svg
                   className="w-6 h-6"
@@ -76,12 +76,12 @@ const Nav = () => {
           >
             <div className="absolute top-0 left-0 p-4">
               {/* <img src="/logo.png" alt="Logo" className="w-auto h-10" /> */}
-              <p className="text-white text-4xl font-bold">Nexedge <span className="text-cyan-400">Solution</span></p>
+              <p className="text-black text-4xl font-bold">Nexedge <span className="text-cyan-600">Solution</span></p>
             </div>
 
             {/* Close (X) Icon at the top-right */}
             <div className="absolute top-0 right-0 p-4">
-              <button onClick={toggleMenu} className="text-white focus:outline-none">
+              <button onClick={toggleMenu} className="text-black focus:outline-none">
                 <svg
                   className="w-6 h-6 "
                   fill="none"
@@ -104,7 +104,7 @@ const Nav = () => {
               {navLinks.map((item) => (
                 <span
                   key={item.label}
-                  className={`${activeLink === item.href ? "border-b-2 border-cyan-400" : ""} text-white block py-4 font-bold text-2xl cursor-pointer`}
+                  className={`${activeLink === item.href ? "border-b-2 border-cyan-700" : ""} text-black block py-4 font-bold text-2xl cursor-pointer`}
                 >
                   <Link href={item.href}>{item.label}</Link>
                 </span>
@@ -118,8 +118,8 @@ const Nav = () => {
               <span
                 key={item.label}
                 className={`${
-                  activeLink === item.href ? "border-b-2 border-cyan-400" : ""
-                } block text-md py-2 font-bold md:py-0 cursor-pointer hover:border-b-2 text-white hover:border-cyan-400`}
+                  activeLink === item.href ? "border-b-2 border-cyan-700" : ""
+                } block text-md py-2 font-bold md:py-0 cursor-pointer hover:border-b-2 text-black hover:border-cyan-400`}
               >
                 <Link href={item.href}>{item.label}</Link>
               </span>
