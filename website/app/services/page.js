@@ -3,6 +3,7 @@ import Nav from '../components/Navbar'
 import { font } from '../components/font/titan'
 import Link from 'next/link'
 import serviceData from "../components/data/serviceCards"
+import Footer from '../components/Footer'
 
 const page = () => {
   return (
@@ -27,6 +28,7 @@ const page = () => {
             ))}
             </div>
     </div>
+    <Footer/>
     </>
   )
 }

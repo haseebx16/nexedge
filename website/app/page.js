@@ -4,6 +4,7 @@ import Nav from "./components/Navbar";
 import Services from "./components/Services";
 import Structure from "./components/Structure";
 import WebsiteDesign from "./components/About";
+import ContactPage from "./components/Contact";
 
 export default function Home() {
   return (
@@ -22,6 +23,9 @@ export default function Home() {
         </section>
         <section>
           <Structure/>
+        </section>
+        <section>
+          <ContactPage/>
         </section>
         <section>
           <Footer/>
