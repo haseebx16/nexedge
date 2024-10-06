@@ -20,11 +20,11 @@ const Page = () => {
 
         <div className='flex justify-center items-center flex-col w-full relative z-10'>
           <div className='text-white text-center mt-12'>
-            <p className={`${font.className} text-7xl font-bold flex flex-col flex-wrap sm:text-7xl mt-36 text-cyan-400`}>
+            <p className={`${font.className} text-5xl font-bold flex flex-col flex-wrap sm:text-7xl mt-36 text-cyan-400`}>
               Custom Web<span className='text-white'>Applications</span>
             </p>
           </div>
-          <div className='text-center max-w-md mx-auto'>
+          <div className='text-center max-w-sm md:max-w-md mx-auto'>
             <p className='sm:text-xl text-center text-white'>
               Get personalized custom web application & web designs for your projects.
             </p>
@@ -34,7 +34,7 @@ const Page = () => {
 
       {/* Content Sections */}
       <div className="min-h-screen gradient-bg">
-        <div className="flex flex-col md:flex-row md:mx-24 pt-12 justify-center items-center">
+        <div className="flex flex-col lg:flex-row pt-12 justify-center items-center">
           <img src='/website-code-img.jpg' className='w-auto h-80 md:hover:h-96 duration-300 rounded-lg shadow-green-200 shadow-lg'/>
           <p className={`${font2.className} text-black mt-12 text-center text-xl mx-12 max-w-2xl  p-4 rounded-md`}>
             <span className={`${font2.className} text-3xl font-bold mb-6 text-orange-500`}>What We Offer: </span><br/>
@@ -42,10 +42,10 @@ const Page = () => {
           </p>
         </div>
 
-        <div className="flex flex-col md:flex-row md:mx-24 pb-12 pt-12 justify-center items-center">
+        <div className="flex flex-col lg:flex-row pb-12 pt-12 justify-center items-center">
           <p className={`${font2.className} text-black mt-12 text-center text-xl mx-12 max-w-2xl  p-4 rounded-md`}>
             <span className={`${font2.className} text-3xl font-bold mb-6 text-orange-500`}>Key Features: </span><br/>
-            NexEdge Solution develops custom web applications tailored to meet specific business needs, focusing on innovative, scalable, and secure technology. We prioritize user-friendly design, ensuring seamless performance across all devices. Our team delivers powerful, reliable solutions that enhance business operations and drive growth.
+            Nexedge Solution develops custom web applications tailored to meet specific business needs, focusing on innovative, scalable, and secure technology. We prioritize user-friendly design, ensuring seamless performance across all devices. Our team delivers powerful, reliable solutions that enhance business operations and drive growth.
           </p>
           <img src='/website-service.jpeg' className='w-auto h-80 md:hover:h-96 duration-300 rounded-lg shadow-green-200 shadow-lg'/>
         </div>

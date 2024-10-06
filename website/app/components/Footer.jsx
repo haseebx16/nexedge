@@ -3,6 +3,7 @@ import { FaFacebook, FaTwitter } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { font } from './font/titan';
 import { font2 } from './font/poppins';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -24,12 +25,12 @@ const Footer = () => {
         
         <div className="sm:w-1/3 mt-8 sm:mt-0 text-center sm:text-left flex flex-col justify-center items-center w-full">
           <p className={`${font.className} text-black text-lg mb-2`}>Our Services</p>
-          <p className={`${font2.className} text-cyan-600 text-sm`}>• SAP Business One Implementation</p>
-          <p className={`${font2.className} text-cyan-600 text-sm`}>• Custom Web Application</p>
-          <p className={`${font2.className} text-cyan-600 text-sm`}>• Electronics & Electrical Engineering Solutions</p>
-          <p className={`${font2.className} text-cyan-600 text-sm`}>• IoT Implementation & Support</p>
-          <p className={`${font2.className} text-cyan-600 text-sm`}>• ERP Implementation & Support</p>
-          <p className={`${font2.className} text-cyan-600 text-sm`}>• Data Analysis & Data Science Solutions</p>
+          <Link href="/services/sap-b1"><p className={`${font2.className} text-cyan-600 text-sm`}>• SAP Business One Implementation</p></Link>
+          <Link href="/services/custom-web-app"><p className={`${font2.className} text-cyan-600 text-sm`}>• Custom Web Application</p></Link>
+          <Link href="/services/electronics-and-electrical-engineering"><p className={`${font2.className} text-cyan-600 text-sm`}>• Electronics & Electrical Engineering Solutions</p></Link>
+          <Link href="/services/iot-solutions"><p className={`${font2.className} text-cyan-600 text-sm`}>• IoT Implementation & Support</p></Link>
+          <Link href="/services/erp"><p className={`${font2.className} text-cyan-600 text-sm`}>• ERP Implementation & Support</p></Link>
+          <Link href="/services/data-science"><p className={`${font2.className} text-cyan-600 text-sm`}>• Data Analysis & Data Science Solutions</p></Link>
         </div>
 
         <div className="sm:w-1/3 mt-8 sm:mt-0 text-center sm:text-left flex flex-col justify-center items-center w-full">

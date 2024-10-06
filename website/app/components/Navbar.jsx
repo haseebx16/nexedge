@@ -21,7 +21,7 @@ const Nav = () => {
   return (
     <div className="flex justify-center mb-12 text-black items-center z-50 flex-wrap bg-green-100">
       <header
-        className={`${font2.className} w-full fixed shadow-md shadow-black z-50 gradient-nav bg-opacity-90 backdrop-blur-lg top-0 flex-wrap p-7 text-black`}
+        className={`${font2.className} w-screen fixed shadow-md shadow-black z-50 gradient-nav bg-opacity-90 backdrop-blur-lg top-0 flex-wrap p-7 text-black`}
       >
         <nav className="flex items-center justify-between px-8">
           <div className="flex items-center">
