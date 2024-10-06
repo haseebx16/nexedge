@@ -7,11 +7,11 @@ const ContactPage = () => {
       <div className="max-w-7xl w-full bg-white shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row">
         
         {/* Left Side - Company Info */}
-        <div className="w-full md:w-1/2 p-8 gradient-website text-white">
+        <div className="w-full md:w-1/2 p-8 gradient-website flex flex-col justify-center items-center text-white">
           <h2 className="text-4xl font-bold mb-6">Contact Us</h2>
           <p className="text-4xl mb-4 font-bold">Nexedge <span className='text-cyan-500'>Solution</span></p>
-          <p className="text-lg mb-2">Location: 1234 Street Name, City, Country</p>
-          <p className="text-lg mb-2">Phone: +123-456-7890</p>
+          {/* <p className="text-lg mb-2">Location: 1234 Street Name, City, Country</p> */}
+          <p className="text-lg mb-2">Phone: +92 309 9650505</p>
           <p className="text-lg mb-2">Email: info@nexedgesolution.com</p>
           {/* <p className="text-lg mb-2">Working Hours: Mon-Fri 9:00 AM - 6:00 PM</p> */}
         </div>
