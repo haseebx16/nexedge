@@ -10,8 +10,9 @@ const Footer = () => {
     <div className="gradient-bg text-white py-8">
       <div className="container mx-auto flex flex-col sm:flex-row justify-between items-start px-4 sm:px-12">
 
-        <div className="sm:w-1/3 text-center sm:text-left">
-          <p className={`${font.className} text-black text-5xl font-bold mb-2`}>Nexedge<span className="text-cyan-600">{"  "}Solution</span></p>
+        <div className="sm:w-1/3 flex flex-col justify-center items-center ml-4 text-center sm:text-left">
+          <img src="/logo.png" className='w-auto h-7 sm:h-12'/>
+          {/* <p className={`${font.className} text-black text-5xl font-bold mb-2`}>Nexedge<span className="text-cyan-600">{"  "}Solution</span></p> */}
           <p className={`${font2.className} text-md text-black leading-relaxed`}>
           Transforming Technology, Driving Success.
           </p>

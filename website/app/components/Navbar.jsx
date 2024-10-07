@@ -25,8 +25,8 @@ const Nav = () => {
       >
         <nav className="flex items-center justify-between px-8">
           <div className="flex items-center">
-            {/* <img src="/logo.png" alt="Logo" className="w-auto h-10 sm:h-10 md:h-10 lg:h-14 fixed" /> */}
-            <p className="text-black text-4xl font-bold">Nexedge  <span className="text-cyan-600">Solution</span></p>
+            <img src="/logo.png" alt="Logo" className="w-auto h-7 sm:h-10 md:h-10 lg:h-14 fixed" />
+            {/* <p className="text-black text-4xl font-bold">Nexedge  <span className="text-cyan-600">Solution</span></p> */}
           </div>
 
           {/* Hamburger icon for mobile */}
@@ -75,8 +75,8 @@ const Nav = () => {
             }`}
           >
             <div className="absolute top-0 left-0 p-4">
-              {/* <img src="/logo.png" alt="Logo" className="w-auto h-10" /> */}
-              <p className="text-black text-4xl font-bold">Nexedge <span className="text-cyan-600">Solution</span></p>
+              <img src="/logo.png" alt="Logo" className="w-auto h-7" />
+              {/* <p className="text-black text-4xl font-bold">Nexedge <span className="text-cyan-600">Solution</span></p> */}
             </div>
 
             {/* Close (X) Icon at the top-right */}
