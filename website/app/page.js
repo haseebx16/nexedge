@@ -16,7 +16,8 @@ export default function Home() {
         <section>
             <Nav/>
         </section>
-        <section>
+        <section className="relative">
+          <div className="z-0 gradient-hero"/>
           <Hero/>
         </section>
         <section>

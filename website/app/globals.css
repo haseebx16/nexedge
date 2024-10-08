@@ -16,3 +16,8 @@
     background: radial-gradient(circle at center, #204a7c 0%, #0e305e 30%, #0b2b5a 70%, #092046 100%);
     width: 100%;
   }
+
+.gradient-hero{ background: radial-gradient(circle at center, 
+    rgba(255, 255, 255, 0.2) 0%,  /* light center */
+    rgba(44, 44, 44, 1) 40%,      /* darker grey surrounding */
+    rgba(28, 28, 28, 1) 100%);}
