@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 
 const Hero = () => {
   return (
-    <div className={`${font.className} bg-darkGrey p-16 flex justify-center items-center flex-col`} style={{ minHeight: "50rem" }}>
+    <div className={`${font.className} bg-darkGrey p-24 pt-36 flex justify-center items-center flex-col`} style={{ minHeight: "50rem" }}>
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -99,6 +99,24 @@ const Hero = () => {
           Get A Free Demo
         </motion.button>
       </motion.div>
+
+      <motion.div className='gradient-website mt-12 w-full rounded-2xl py-12 overflow-hidden'>
+          <motion.div
+            initial={{ x: '100vw' }} // Start off-screen on the right
+            animate={{
+              x: ['100vw', '0vw', '-50vw'], // Slide from right to left and exit to left
+            }}
+            transition={{
+              duration: 5, // Adjust this value for speed
+              ease: 'linear', // Use linear easing for constant speed
+              repeat: Infinity, // Repeat indefinitely
+              repeatType: 'loop', // Specify that it should loop
+            }}
+            className='text-white text-5xl font-extrabold whitespace-nowrap'
+          >
+            Need The Best Solution? Contact Us !
+          </motion.div>
+        </motion.div>
     </div>
   )
 }

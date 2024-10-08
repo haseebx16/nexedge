@@ -6,7 +6,7 @@ import Link from 'next/link';
 const WebsiteDesign = () => {
   return (
     <>
-        <div className="relative min-h-[30rem] gradient-website">
+        <div className="relative min-h-[30rem] bg-darkGrey">
 
         <div className='flex justify-center items-center flex-col w-full relative z-10'>
           <div className='text-white text-center mt-12'>
