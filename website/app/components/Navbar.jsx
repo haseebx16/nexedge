@@ -121,24 +121,24 @@ const Nav = () => {
                       className="absolute bg-darkGrey text-white mt-2 rounded shadow-lg"
                     >
                       <ul className="flex flex-col">
-                        <li className="py-2 px-10 hover:bg-customCyan hover:text-black whitespace-nowrap cursor-pointer">
-                          <Link href="/service1">IoT Implementation & Support</Link>
-                        </li>
-                        <li className="py-2 px-10 hover:bg-customCyan hover:text-black whitespace-nowrap cursor-pointer">
-                          <Link href="/service2">SAP B1 Implementation & Support</Link>
-                        </li>
-                        <li className="py-2 px-10 hover:bg-customCyan hover:text-black cursor-pointer">
-                          <Link href="/service3">Custom Web Application</Link>
-                        </li>
-                        <li className="py-2 px-10 hover:bg-customCyan hover:text-black cursor-pointer">
-                          <Link href="/service4">Data Science & Data Analytics</Link>
-                        </li>
-                        <li className="py-2 px-10 hover:bg-customCyan hover:text-black cursor-pointer">
-                          <Link href="/service5">ERP Implementation & Support</Link>
-                        </li>
-                        <li className="py-2 px-10 hover:bg-customCyan hover:text-black cursor-pointer">
-                          <Link href="/service6">Electronics & Electrical Engineering</Link>
-                        </li>
+                      <Link href="/services/iot-solutions"><li className="py-2 px-10 hover:bg-customCyan hover:text-black whitespace-nowrap cursor-pointer">
+                         IoT Implementation & Support
+                        </li></Link>
+                        <Link href="/services/sap-b1"><li className="py-2 px-10 hover:bg-customCyan hover:text-black whitespace-nowrap cursor-pointer">
+                          SAP B1 Implementation & Support
+                        </li></Link>
+                        <Link href="/services/custom-web-app"><li className="py-2 px-10 hover:bg-customCyan hover:text-black cursor-pointer">
+                          Custom Web Application
+                        </li></Link>
+                        <Link href="/services/data-science"><li className="py-2 px-10 hover:bg-customCyan hover:text-black cursor-pointer">
+                          Data Science & Data Analytics
+                        </li></Link>
+                        <Link href="/services/erp"><li className="py-2 px-10 hover:bg-customCyan hover:text-black cursor-pointer">
+                          ERP Implementation & Support
+                        </li></Link>
+                        <Link href="/services/electronics-and-electrical-engineering"><li className="py-2 px-10 hover:bg-customCyan hover:text-black cursor-pointer">
+                          Electronics & Electrical Engineering
+                        </li></Link>
                       </ul>
                     </motion.div>
                   </AnimatePresence>

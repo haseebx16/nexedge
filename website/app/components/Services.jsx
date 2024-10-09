@@ -12,13 +12,9 @@ const Services = () => {
     visible: { opacity: 1, transition: { duration: 1 } },
   };
 
-  const slideInUp = {
-    hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 1 } },
-  };
-
-  const hoverEffect = {
-    hover: { scale: 1.05, boxShadow: '0 10px 20px rgba(0, 255, 255, 0.3)', transition: { duration: 0.3 } },
+  const popUp = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
   };
 
   return (
@@ -29,14 +25,14 @@ const Services = () => {
         initial="hidden"
         whileInView="visible"
         variants={fadeIn}
-        viewport={{ once: true, amount: 0.3 }} 
+        viewport={{ once: true, amount: 0.3 }}
       >
         <motion.p className="text-4xl md:text-5xl lg:text-5xl font-extrabold text-customCyan">
           Services
         </motion.p>
         <motion.p
           className="font-light mt-6 text-white max-w-3xl mx-auto"
-          variants={slideInUp}
+          variants={fadeIn}
         >
           We excel in providing customized solutions in Engineering, IoT, and digital transformation, carefully crafted to meet the distinct challenges of each client. By embracing continuous innovation and staying ahead of technological trends, we ensure our services are both highly efficient and flexible, adapting seamlessly to the ever-changing demands of the market.
         </motion.p>
@@ -47,19 +43,17 @@ const Services = () => {
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 px-4 md:px-8"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.1 }} 
+        viewport={{ once: true, amount: 0.1 }}
         variants={fadeIn}
       >
         {aboutCards.map((service) => (
           <Link href={service.href} key={service.id}>
             <motion.div
               className="relative group rounded-lg overflow-hidden shadow-2xl shadow-customCyan"
-              whileHover="hover"
-              variants={hoverEffect}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.2 }} 
-              transition={{ delay: 0.1 }}
+              variants={popUp} // Change this to the popUp variant
+              viewport={{ once: true, amount: 0.2 }}
             >
               <motion.img
                 src={service.src}
@@ -82,6 +76,6 @@ const Services = () => {
       </motion.div>
     </div>
   );
-}
+};
 
 export default Services;
