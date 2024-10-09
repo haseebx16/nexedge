@@ -32,9 +32,9 @@ const Nav = () => {
     <div className="flex justify-center mb-12 text-white items-center z-50 flex-wrap bg-green-100">
       <header className={`${font2.className} w-screen fixed shadow-xl shadow-customCyan-light z-50 bg-darkGrey bg-opacity-90 backdrop-blur-lg top-0 flex-wrap p-7 text-black`}>
         <nav className="flex items-center justify-between px-8">
-          <div className="flex items-center">
+        <Link href="/"><div className="flex items-center">
             <img src="/white-logo.png" alt="Logo" className="w-auto h-7 sm:h-10 md:h-10 lg:h-14 fixed" />
-          </div>
+          </div></Link>
 
           {/* Hamburger icon for mobile */}
           <div className="md:hidden flex items-center">

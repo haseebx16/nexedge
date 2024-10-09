@@ -57,7 +57,7 @@ const Page = () => {
           variants={fadeIn}
           viewport={{ once: true, amount: 0.2 }} // Trigger animation once in the viewport
         >
-          <img src='/iot-2.svg' className='w-auto h-64 md:hover:h-72 duration-300 rounded-lg shadow-xl shadow-customCyan' />
+          <img src='/iot.avif' className='w-auto h-64 md:hover:h-72 duration-300 rounded-lg shadow-xl shadow-customCyan' />
           <p className={`${font2.className} text-white mt-12 text-center text-xl mx-12 max-w-2xl p-4 rounded-md`}>
             <span className={`${font2.className} text-3xl font-bold mb-6 text-customCyan`}>What We Offer: </span><br />
             Nexedge Solution delivers end-to-end IoT solutions, enabling smart device integration and real-time data insights. Our custom IoT platforms optimize efficiency, automate processes, and drive innovation for your business.
