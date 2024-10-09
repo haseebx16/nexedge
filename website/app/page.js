@@ -30,7 +30,7 @@ export default function Home() {
               <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
                   {aboutCards.map((service) => (
                       <Link href={service.href} key={service.id}>
-                          <div className='relative shadow-2xl group'>
+                          <div className='relative shadow-2xl group shadow-customCyan'>
                               <img src={service.src} alt={service.label} className='w-full h-64 object-cover rounded-lg' />
                               <div className='absolute inset-0 bg-black group-hover:opacity-40 rounded-lg opacity-90 transition-opacity duration-300'></div>
                               <div className='absolute inset-0 flex justify-center items-center'>

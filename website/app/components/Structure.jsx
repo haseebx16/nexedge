@@ -3,7 +3,7 @@ import { font } from './font/titan'
 
 const Structure = () => {
   return (
-    <div className={`${font.className} gradient-website h-auto p-12 md:space-x-16 flex flex-col md:flex-row md:flex justify-center items-center`}>
+    <div className={`${font.className} bg-darkGrey h-auto p-12 md:space-x-16 flex flex-col md:flex-row md:flex justify-center items-center`}>
         <img src='website-code-img.jpg' className='w-auto border-white border-2 h-96 rounded-md md:max-w-3xl'/>
         <div className=''>
             <p className='text-4xl mt-4 font-extrabold text-center md:text-left text-orange-500'>Specialising In 6 Fields</p>

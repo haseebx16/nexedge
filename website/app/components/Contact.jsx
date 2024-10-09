@@ -3,16 +3,16 @@ import { font } from './font/titan';
 
 const ContactPage = () => {
   return (
-    <div className={`${font.className} min-h-[45rem] gradient-bg flex justify-center items-center p-12`}>
+    <div className={`${font.className} min-h-[45rem] bg-darkGrey flex justify-center items-center p-12`}>
       <div className="max-w-7xl w-full bg-white shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row">
         
         {/* Left Side - Company Info */}
-        <div className="w-full md:w-1/2 p-8 gradient-website flex flex-col justify-center items-center text-white">
+        <div className="w-full md:w-1/2 p-8 bg-darkGrey-lighter flex flex-col justify-center items-center text-white">
           <h2 className="text-4xl font-bold mb-6">Contact Us</h2>
           <p className="text-4xl mb-4 font-bold">Nexedge <span className='text-cyan-500'>Solution</span></p>
           {/* <p className="text-lg mb-2">Location: 1234 Street Name, City, Country</p> */}
-          <p className="text-lg mb-2">Phone: +92 309 9650505</p>
-          <p className="text-lg mb-2">Email: info@nexedgesolution.com</p>
+          <p className="text-lg mb-2"><span className='text-customCyan font-bold'>Phone: </span>+92 309 9650505</p>
+          <p className="text-lg mb-2"><span className='text-customCyan font-bold'>Email:</span> info@nexedgesolution.com</p>
           {/* <p className="text-lg mb-2">Working Hours: Mon-Fri 9:00 AM - 6:00 PM</p> */}
         </div>
         
@@ -56,7 +56,7 @@ const ContactPage = () => {
             <div>
               <button 
                 type="submit" 
-                className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                className="w-full bg-customCyan hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
                 Send Message
               </button>
             </div>

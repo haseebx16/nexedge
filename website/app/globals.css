@@ -13,11 +13,15 @@
 }
 
 .gradient-website {
-    background: radial-gradient(circle at center, #da7070 0%, #c725ac 30%, #2b87ff 70%, #8231df 100%);
-    /* background: radial-gradient(circle at center, #31d3df 0%, #25afc7 30%, #2be6ff 70%, #31d3df 100%); */
+    background: radial-gradient(circle at center, #31d3df 0%, #25afc7 30%, #2be6ff 70%, #31d3df 100%);
     
     width: 100%;
   }
+
+.gradient-slide {
+    background: radial-gradient(circle at center, #da7070 0%, #c725ac 30%, #2b87ff 70%, #8231df 100%);
+
+}
 
 .gradient-hero{ background: radial-gradient(circle at center, 
     rgba(255, 255, 255, 0.2) 0%,  /* light center */

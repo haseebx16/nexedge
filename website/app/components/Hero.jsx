@@ -100,7 +100,7 @@ const Hero = () => {
         </motion.button>
       </motion.div>
 
-      <motion.div className='gradient-website mt-12 w-full rounded-2xl py-12 overflow-hidden'>
+      <motion.div className='gradient-slide  mt-12 w-full rounded-2xl py-12 overflow-hidden'>
           <motion.div
             initial={{ x: '100vw' }} // Start off-screen on the right
             animate={{
