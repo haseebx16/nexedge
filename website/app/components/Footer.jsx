@@ -38,7 +38,7 @@ const Footer = () => {
           className="sm:w-1/3 flex flex-col justify-center items-center ml-4 text-center sm:text-left"
           variants={slideInUp}
         >
-          <img src="/logo.png" className='w-auto h-7 sm:h-12' />
+          <img src="/white-logo.png" className='w-auto h-7 sm:h-12' />
           <p className={`${font2.className} text-md text-white leading-relaxed`}>
             Transforming Technology, Driving Success.
           </p>

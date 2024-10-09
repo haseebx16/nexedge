@@ -33,7 +33,7 @@ const Nav = () => {
       <header className={`${font2.className} w-screen fixed shadow-xl shadow-customCyan-light z-50 bg-darkGrey bg-opacity-90 backdrop-blur-lg top-0 flex-wrap p-7 text-black`}>
         <nav className="flex items-center justify-between px-8">
           <div className="flex items-center">
-            <img src="/logo.png" alt="Logo" className="w-auto h-7 sm:h-10 md:h-10 lg:h-14 fixed" />
+            <img src="/white-logo.png" alt="Logo" className="w-auto h-7 sm:h-10 md:h-10 lg:h-14 fixed" />
           </div>
 
           {/* Hamburger icon for mobile */}
@@ -62,7 +62,7 @@ const Nav = () => {
                 className="flex flex-col items-center justify-center h-screen fixed inset-0 bg-darkGrey z-50 md:hidden"
               >
                 <div className="absolute top-0 left-0 p-4">
-                  <img src="/logo.png" alt="Logo" className="w-auto h-7" />
+                  <img src="/white-logo.png" alt="Logo" className="w-auto h-7" />
                 </div>
 
                 <div className="absolute top-0 right-0 p-4">
