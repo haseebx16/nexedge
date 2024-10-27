@@ -19,7 +19,7 @@ const Services = () => {
 
   return (
     <div className={`${font.className} bg-darkGrey py-20 flex flex-col items-center`}>
-      {/* Scroll-triggered Animation for Title and Description */}
+      
       <motion.div
         className="text-center mb-16 px-4 md:px-0"
         initial="hidden"
@@ -38,7 +38,6 @@ const Services = () => {
         </motion.p>
       </motion.div>
 
-      {/* Scroll-triggered Animation for Service Cards */}
       <motion.div
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 px-4 md:px-8"
         initial="hidden"
@@ -46,7 +45,7 @@ const Services = () => {
         viewport={{ once: true, amount: 0.1 }}
         variants={fadeIn}
       >
-        {aboutCards.map((service) => (
+        {aboutCards.slice(0, 3).map((service) => (  // First three cards
           <Link href={service.href} key={service.id}>
             <motion.div
               className="relative group rounded-lg overflow-hidden shadow-2xl shadow-customCyan"
@@ -74,6 +73,44 @@ const Services = () => {
           </Link>
         ))}
       </motion.div>
+
+      <div className="flex justify-center mt-8"> {/* Centering wrapper for the second row */}
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-2 gap-12 px-4 md:px-8"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+          variants={fadeIn}
+        >
+          {aboutCards.slice(3).map((service) => (  // Remaining two cards
+            <Link href={service.href} key={service.id}>
+              <motion.div
+              className="relative group rounded-lg overflow-hidden shadow-2xl shadow-customCyan"
+              initial="hidden"
+              whileInView="visible"
+              variants={popUp}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <motion.img
+                src={service.src}
+                alt={service.label}
+                className="w-full h-64 md:h-64 lg:h-64 object-cover"
+              />
+              <motion.div className="absolute inset-0 bg-black bg-opacity-80 group-hover:bg-opacity-30 transition-opacity duration-300" />
+              <motion.div
+                className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                initial={{ opacity: 1, y: 10 }}
+                whileHover={{ opacity: 1, y: 0 }}
+              >
+                <p className="text-white text-2xl md:text-2xl lg:text-2xl font-light text-center p-4">
+                  {service.label}
+                </p>
+              </motion.div>
+            </motion.div>
+            </Link>
+          ))}
+        </motion.div>
+      </div>
     </div>
   );
 };

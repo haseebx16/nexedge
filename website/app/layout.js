@@ -13,7 +13,7 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Nexedge Solutions",
+  title: "Nexedge Solution",
   description: "Transforming Technology, Driving Success.",
 };
 
