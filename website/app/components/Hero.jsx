@@ -7,16 +7,19 @@ import { motion } from 'framer-motion'
 
 const Hero = () => {
   return (
-    <div className={`${font.className} bg-darkGrey p-24 pt-36 flex justify-center items-center flex-col`} style={{ minHeight: "50rem" }}>
+    <div className={`${font.className} bg-darkGrey p-8 md:p-24 pt-24 flex justify-center items-center flex-col`} style={{ minHeight: "50rem" }}>
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         className='flex flex-col justify-center items-center space-y-6 w-full'
       >
-        <p className='text-5xl sm:text-7xl text-white font-bold'>
+        {/* <p className='text-5xl sm:text-7xl text-white font-bold'>
           Nexedge <span className='text-customCyan'>Solution</span>
-        </p>
+        </p> */}
+        
+          <img src='/white-logo.png' className='w-full  md:w-[45rem]'/>
+        
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -110,7 +113,6 @@ const Hero = () => {
               duration: 5, // Adjust this value for speed
               ease: 'linear', // Use linear easing for constant speed
               repeat: Infinity, // Repeat indefinitely
-              repeatType: 'loop', // Specify that it should loop
             }}
             className='text-white text-5xl font-extrabold whitespace-nowrap'
           >

@@ -1,6 +1,6 @@
-import { Chakra_Petch } from "next/font/google";
+import { Chakra_Petch, Space_Grotesk } from "next/font/google";
 
-export const font = Chakra_Petch({
+export const font = Space_Grotesk({
     subsets: ['latin'],
     weight: '400'
 })

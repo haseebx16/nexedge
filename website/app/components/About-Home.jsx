@@ -31,7 +31,7 @@ const About = () => {
         variants={fadeIn}
         viewport={{ once: true, amount: 0.3 }}
       >
-        <motion.p className="text-4xl md:text-5xl lg:text-5xl font-extrabold text-customCyan">
+        <motion.p className={`${font.className} text-4xl md:text-5xl lg:text-5xl font-extrabold text-customCyan`}>
           Who We Are
         </motion.p>
         <motion.p
@@ -67,9 +67,9 @@ const About = () => {
           variants={slideInRight}
           viewport={{ once: true }}
         >
-          <h3 className="text-3xl text-customCyan font-bold mb-4">Our Vision</h3>
-          <p className="text-lg md:text-lg mb-4 leading-relaxed">
-          With our expertise in industrial projects and B2B solutions, Nexedge Solution help businesses optimize their operations and achieve growth. Our approach combines technical knowledge with industry insights to deliver tailored, impactful strategies that drive success. Nexedge Solution is committed to enhancing productivity, streamlining processes, and building lasting partnerships across the industrial sector.
+          <h3 className={`${font.className} text-3xl text-customCyan font-bold mb-4`}>Our Vision</h3>
+          <p className={`${font.className} text-lg md:text-lg mb-4 leading-relaxed`}>
+              With our expertise in industrial projects and B2B solutions, Nexedge Solution help businesses optimize their operations and achieve growth. Our approach combines technical knowledge with industry insights to deliver tailored, impactful strategies that drive success. Nexedge Solution is committed to enhancing productivity, streamlining processes, and building lasting partnerships across the industrial sector.
           </p>
          
         </motion.div>
@@ -94,7 +94,7 @@ const About = () => {
 
         {/* Text Content */}
         <motion.div
-          className="md:w-1/2 w-full text-white flex flex-col justify-center text-center md:text-left"
+          className={`${font.className} md:w-1/2 w-full text-white flex flex-col justify-center text-center md:text-left`}
           initial="hidden"
           whileInView="visible"
           variants={slideInLeft}
