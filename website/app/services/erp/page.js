@@ -42,7 +42,7 @@ const Page = () => {
           </div>
           <div className='text-center max-w-sm md:max-w-md mx-auto'>
             <p className='sm:text-xl text-center text-white'>
-              Get personalized help and guidance for your SAP B1 & ERP projects.
+              Get personalized help and guidance for your ERP projects.
             </p>
           </div>
         </div>
