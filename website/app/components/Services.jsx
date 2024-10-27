@@ -52,7 +52,7 @@ const Services = () => {
               className="relative group rounded-lg overflow-hidden shadow-2xl shadow-customCyan"
               initial="hidden"
               whileInView="visible"
-              variants={popUp} // Change this to the popUp variant
+              variants={popUp}
               viewport={{ once: true, amount: 0.2 }}
             >
               <motion.img

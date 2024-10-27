@@ -1,10 +1,13 @@
 "use client";
 
-import React from 'react';
+import React, { useRef } from 'react';
 import { font } from './font/titan';
 import { motion } from 'framer-motion';
+import emailjs from 'emailjs-com';
 
 const ContactPage = () => {
+  const form = useRef();
+
   // Animation variants
   const fadeIn = {
     hidden: { opacity: 0 },
@@ -21,6 +24,28 @@ const ContactPage = () => {
     visible: { x: 0, opacity: 1, transition: { duration: 1 } },
   };
 
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'service_pg4f2xh', // Replace with your EmailJS service ID
+        'template_mkky3rt', // Replace with your EmailJS template ID
+        form.current,
+        'NGGPkBYPBuoP1wBFO' // Replace with your EmailJS user ID
+      )
+      .then(
+        (result) => {
+          alert('Message sent successfully!');
+          e.target.reset();
+        },
+        (error) => {
+          alert('Failed to send message, please try again later.');
+          console.error(error);
+        }
+      );
+  };
+
   return (
     <div className={`${font.className} min-h-[45rem] bg-darkGrey flex justify-center items-center p-12`}>
       <motion.div
@@ -28,7 +53,7 @@ const ContactPage = () => {
         initial="hidden"
         whileInView="visible"
         variants={fadeIn}
-        viewport={{ once: false, amount: 0.2 }} // Trigger when 20% of the element is in view
+        viewport={{ once: false, amount: 0.2 }}
       >
         {/* Left Side - Company Info */}
         <motion.div
@@ -36,23 +61,23 @@ const ContactPage = () => {
           initial="hidden"
           whileInView="visible"
           variants={slideInLeft}
-          viewport={{ once: false }} // Trigger on scroll
+          viewport={{ once: false }}
         >
-          <h2 className="text-4xl text-customCyan font-extrabold mb-6">Contact Us</h2>
-          <p className="text-4xl mb-4 font-bold">Nexedge <span className='text-customCyan '>Solution</span></p>
-          <p className="text-lg mb-2"><span className='text-customCyan font-bold'>Phone: </span>+92 309 9650505</p>
-          <p className="text-lg mb-2"><span className='text-customCyan font-bold'>Email:</span> info@nexedgesolution.com</p>
+          <h2 className="text-4xl text-customCyan font-extrabold mb-2">Contact Us</h2>
+          <img src="/white-logo.png" className="w-96 mb-2 h-auto" />
+          <p className="text-lg mb-2"><span className="text-customCyan font-bold">Phone: </span>+92 309 9650505</p>
+          <p className="text-lg mb-2"><span className="text-customCyan font-bold">Email:</span> info@nexedgesolution.com</p>
         </motion.div>
-        
+
         {/* Right Side - Contact Form (centered vertically) */}
         <motion.div
           className="w-full md:w-1/2 flex justify-center items-center p-8"
           initial="hidden"
           whileInView="visible"
           variants={slideInRight}
-          viewport={{ once: false }} // Trigger on scroll
+          viewport={{ once: false }}
         >
-          <form className="w-full max-w-lg space-y-4">
+          <form ref={form} onSubmit={sendEmail} className="w-full max-w-lg space-y-4">
             <h2 className="text-3xl font-semibold text-gray-800 mb-6">Get In Touch</h2>
             <div>
               <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">Name</label>

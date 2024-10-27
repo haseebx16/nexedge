@@ -12,7 +12,7 @@ const WebsiteDesign = () => {
         <div className='flex justify-center items-center flex-col w-full relative z-10'>
           <div className='text-white text-center mt-12'>
             <p className={`${font.className} text-5xl font-bold flex flex-col flex-wrap sm:text-7xl mt-36 text-cyan-400`}>
-              We are a Professional Firm<span className='text-white'>Commited to Success</span>
+              We Are An Authorized Firm<span className='text-white'>Commited To Success</span>
             </p>
           </div>
         </div>

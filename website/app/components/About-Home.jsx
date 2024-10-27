@@ -69,11 +69,9 @@ const About = () => {
         >
           <h3 className="text-3xl text-customCyan font-bold mb-4">Our Vision</h3>
           <p className="text-lg md:text-lg mb-4 leading-relaxed">
-            We envision a future where businesses thrive through superior digital experiences. Our goal is to craft visually stunning and highly functional websites that help brands succeed in the online world.
+          With our expertise in industrial projects and B2B solutions, Nexedge Solution help businesses optimize their operations and achieve growth. Our approach combines technical knowledge with industry insights to deliver tailored, impactful strategies that drive success. Nexedge Solution is committed to enhancing productivity, streamlining processes, and building lasting partnerships across the industrial sector.
           </p>
-          <p className={`${font.className} text-lg md:text-lg`}>
-            We focus on innovative, user-centered designs that leave a lasting impression and drive growth for our clients.
-          </p>
+         
         </motion.div>
       </div>
 

@@ -1,21 +1,15 @@
 [
     {
-        "label": "Comprehensive Electronics Engineering and Electrical Solutions",
+        "label": "Comprehensive Electronics Engineering and Electrical Solutions And Support",
         "id": 1,
         "src": "electronics.jpg",
         "href": "/services/electronics-and-electrical-engineering"
     },
     {
-        "label": "Data Analysis and Data Science Solutions",
+        "label": "Data Analysis, Data Science Solutions And Support",
         "id": 2,
         "src": "data-science.webp",
         "href": "/services/data-science"
-    },
-    {
-        "label": "SAP Business One (SAP B1) Implementation and Support",
-        "id": 3,
-        "src": "sap-business-one.jpg",
-        "href": "/services/sap-b1"
     },
     {
         "label": "ERP Implementation and Support",
@@ -24,13 +18,13 @@
         "href": "/services/erp"
     },
     {
-        "label": "IoT Solutions And Implementations",
+        "label": "IoT Solutions, Implementations And Support",
         "id": 5,
         "src": "IOT.jpg",
         "href": "/services/iot-solutions"
     },
     {
-        "label": "Custom Web Applications",
+        "label": "Custom Web Applications And Maintenance",
         "id": 6,
         "src": "website-service.jpeg",
         "href": "/services/custom-web-app"

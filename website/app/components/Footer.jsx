@@ -57,16 +57,31 @@ const Footer = () => {
         </motion.div>
 
         <motion.div
-          className="sm:w-1/3 mt-8 sm:mt-0 text-center sm:text-left flex flex-col justify-center items-center w-full"
+          className="sm:w-1/3 mt-8 sm:mt-0 text-left sm:text-left flex flex-col justify-center items-center w-full"
           variants={slideInUp}
         >
           <p className={`${font.className} text-white text-lg mb-2`}>Our Services</p>
-          <Link href="/services/sap-b1"><p className={`${font2.className} text-customCyan text-sm`}>• SAP Business One Implementation</p></Link>
-          <Link href="/services/custom-web-app"><p className={`${font2.className} text-customCyan text-sm`}>• Custom Web Application</p></Link>
-          <Link href="/services/electronics-and-electrical-engineering"><p className={`${font2.className} text-customCyan text-sm`}>• Electronics & Electrical Engineering Solutions</p></Link>
-          <Link href="/services/iot-solutions"><p className={`${font2.className} text-customCyan text-sm`}>• IoT Implementation & Support</p></Link>
-          <Link href="/services/erp"><p className={`${font2.className} text-customCyan text-sm`}>• ERP Implementation & Support</p></Link>
-          <Link href="/services/data-science"><p className={`${font2.className} text-customCyan text-sm`}>• Data Analysis & Data Science Solutions</p></Link>
+          {/* Services listed in a flex column for proper alignment */}
+          <div className="flex flex-col space-y-1 ml-12 text-left">
+            <Link href="/services/custom-web-app">
+              <p className={`${font2.className} text-customCyan text-sm`}>• Custom Web Application & Maintenance</p>
+            </Link>
+            <Link href="/services/electronics-and-electrical-engineering">
+              <p className={`${font2.className} text-customCyan text-sm`}>• Electronics Engineering Solutions & Support</p>
+            </Link>
+            <Link href="/services/electronics-and-electrical-engineering">
+              <p className={`${font2.className} text-customCyan text-sm`}>• Electrical Engineering Solutions & Support</p>
+            </Link>
+            <Link href="/services/iot-solutions">
+              <p className={`${font2.className} text-customCyan text-sm`}>• IoT Implementation & Support</p>
+            </Link>
+            <Link href="/services/erp">
+              <p className={`${font2.className} text-customCyan text-sm`}>• ERP Implementation & Support</p>
+            </Link>
+            <Link href="/services/data-science">
+              <p className={`${font2.className} text-customCyan text-sm`}>• Data Analysis, Data Science Solutions <br/> &nbsp;&nbsp;& Support</p>
+            </Link>
+          </div>
         </motion.div>
 
         <motion.div

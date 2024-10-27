@@ -124,20 +124,18 @@ const Nav = () => {
                       <Link href="/services/iot-solutions"><li className="py-2 px-10 hover:bg-customCyan hover:text-black whitespace-nowrap cursor-pointer">
                          IoT Implementation & Support
                         </li></Link>
-                        <Link href="/services/sap-b1"><li className="py-2 px-10 hover:bg-customCyan hover:text-black whitespace-nowrap cursor-pointer">
-                          SAP B1 Implementation & Support
-                        </li></Link>
+                       
                         <Link href="/services/custom-web-app"><li className="py-2 px-10 hover:bg-customCyan hover:text-black cursor-pointer">
-                          Custom Web Application
+                          Custom Web Application And Maintenance
                         </li></Link>
                         <Link href="/services/data-science"><li className="py-2 px-10 hover:bg-customCyan hover:text-black cursor-pointer">
-                          Data Science & Data Analytics
+                          Data Science, Data Analytics And Support
                         </li></Link>
                         <Link href="/services/erp"><li className="py-2 px-10 hover:bg-customCyan hover:text-black cursor-pointer">
                           ERP Implementation & Support
                         </li></Link>
                         <Link href="/services/electronics-and-electrical-engineering"><li className="py-2 px-10 hover:bg-customCyan hover:text-black cursor-pointer">
-                          Electronics & Electrical Engineering
+                          Electronics & Electrical Engineering And Support
                         </li></Link>
                       </ul>
                     </motion.div>

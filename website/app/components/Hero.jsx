@@ -48,7 +48,7 @@ const Hero = () => {
             <h5 className="mb-2 text-2xl font-bold tracking-tight dark:text-white">
               Engineering Experts
             </h5>
-            <p>Unique and creative Engineering Solutions tailored to your vision.</p>
+            <p>Unique and creative engineering solutions tailored to your vision.</p>
           </motion.div>
         </Link>
 
@@ -61,7 +61,7 @@ const Hero = () => {
             <h5 className="mb-2 text-2xl font-bold tracking-tight dark:text-white">
               Latest Tech-Stack
             </h5>
-            <p>Our Team Is Full Of People Familiar With The Latest Technology</p>
+            <p>Our team is full of people familiar with the latest technology</p>
           </motion.div>
         </Link>
 
@@ -86,18 +86,18 @@ const Hero = () => {
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 0.8 }}
       >
-        <motion.button
+        <Link href="/contact"><motion.button
           whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
           className='p-3 px-8 mt-8 rounded-full bg-customCyan-dark shadow-md shadow-customCyan-light text-white hover:bg-white hover:text-black hover:border hover:border-black duration-300'
         >
           Get A Quote
-        </motion.button>
-        <motion.button
+        </motion.button></Link>
+        <Link href="/contact"><motion.button
           whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
           className='p-3 mt-8 rounded-full bg-customCyan-dark shadow-md shadow-customCyan-light text-white px-4 hover:bg-white hover:text-black hover:border hover:border-black duration-300'
         >
           Get A Free Demo
-        </motion.button>
+        </motion.button></Link>
       </motion.div>
 
       <motion.div className='gradient-slide  mt-12 w-full rounded-2xl py-12 overflow-hidden'>
