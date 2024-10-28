@@ -17,6 +17,7 @@ const Hero = () => {
         {/* <p className='text-5xl sm:text-7xl text-white font-bold'>
           Nexedge <span className='text-customCyan'>Solution</span>
         </p> */}
+      <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
         
           <img src='/white-logo.png' className='w-full  md:w-[45rem]'/>
         
@@ -32,7 +33,7 @@ const Hero = () => {
           adapting seamlessly to the ever-changing demands of the market.
         </motion.p>
       </motion.div>
-
+      <div className="absolute z-[0] w-[30%] h-[35%] top-0 left-20 pink__gradient" />
       <motion.div
         className="flex flex-col sm:flex-row text-white justify-center items-center mt-16"
         initial="hidden"
@@ -102,6 +103,7 @@ const Hero = () => {
           Get A Free Demo
         </motion.button></Link>
       </motion.div>
+      <div className="absolute z-[0] w-[20%] h-[35%] top-100 bottom-20 left-20 right-100 blue__gradient" />
 
       <motion.div className='gradient-slide  mt-12 w-full rounded-2xl py-12 overflow-hidden'>
           <motion.div

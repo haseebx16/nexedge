@@ -29,10 +29,10 @@ const ContactPage = () => {
 
     emailjs
       .sendForm(
-        'service_pg4f2xh', // Replace with your EmailJS service ID
-        'template_mkky3rt', // Replace with your EmailJS template ID
+        'service_pg4f2xh',
+        'template_mkky3rt',
         form.current,
-        'NGGPkBYPBuoP1wBFO' // Replace with your EmailJS user ID
+        'NGGPkBYPBuoP1wBFO'
       )
       .then(
         (result) => {
@@ -47,9 +47,15 @@ const ContactPage = () => {
   };
 
   return (
-    <div className={`${font.className} min-h-[45rem] bg-darkGrey flex justify-center items-center p-12`}>
+    <div className={`${font.className} min-h-[45rem] bg-darkGrey flex justify-center items-center p-12 relative overflow-hidden`}>
+      {/* Gradient Container */}
+      <div className="absolute inset-0">
+        <div className="absolute z-0 w-[40%] h-[50%] right-10 top-20 blue__gradient" />
+        <div className="absolute z-0 w-[10%] h-[50%] left-10 bottom-20 pink__gradient" />
+      </div>
+
       <motion.div
-        className="max-w-7xl w-full shadow-xl shadow-customCyan bg-white rounded-lg overflow-hidden flex flex-col md:flex-row"
+        className="relative max-w-7xl w-full shadow-xl shadow-customCyan bg-white rounded-lg overflow-hidden flex flex-col md:flex-row z-10"
         initial="hidden"
         whileInView="visible"
         variants={fadeIn}
@@ -69,7 +75,7 @@ const ContactPage = () => {
           <p className="text-lg mb-2"><span className="text-customCyan font-bold">Email:</span> info@nexedgesolution.com</p>
         </motion.div>
 
-        {/* Right Side - Contact Form (centered vertically) */}
+        {/* Right Side - Contact Form */}
         <motion.div
           className="w-full md:w-1/2 flex justify-center items-center p-8"
           initial="hidden"
@@ -129,3 +135,4 @@ const ContactPage = () => {
 };
 
 export default ContactPage;
+

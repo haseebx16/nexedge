@@ -31,6 +31,8 @@ const About = () => {
         variants={fadeIn}
         viewport={{ once: true, amount: 0.3 }}
       >
+      {/* <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" /> */}
+
         <motion.p className={`${font.className} text-4xl md:text-5xl lg:text-5xl font-extrabold text-customCyan`}>
           Who We Are
         </motion.p>
@@ -44,6 +46,7 @@ const About = () => {
 
       {/* Section 1: Image on the Left, Text on the Right */}
       <div className="flex flex-col md:flex-row justify-center items-center gap-8 px-4 md:px-8 mb-16">
+        
         {/* Image with Animation */}
         <motion.div
           className="md:w-1/2 shadow-xl shadow-customCyan w-full"
@@ -67,10 +70,15 @@ const About = () => {
           variants={slideInRight}
           viewport={{ once: true }}
         >
+      <div className="absolute z-[0] w-[80%] h-[50%] right-20 bottom-20 blue__gradient" />
+
           <h3 className={`${font.className} text-3xl text-customCyan font-bold mb-4`}>Our Vision</h3>
-          <p className={`${font.className} text-lg md:text-lg mb-4 leading-relaxed`}>
+          <p className={`${font.className} text-lg z-10 md:text-lg mb-4 leading-relaxed`}>
               With our expertise in industrial projects and B2B solutions, Nexedge Solution help businesses optimize their operations and achieve growth. Our approach combines technical knowledge with industry insights to deliver tailored, impactful strategies that drive success. Nexedge Solution is committed to enhancing productivity, streamlining processes, and building lasting partnerships across the industrial sector.
           </p>
+
+      <div className="absolute z-[0] w-[80%] h-[50%] right-20 bottom-1 pink__gradient" />
+
          
         </motion.div>
       </div>
@@ -100,8 +108,11 @@ const About = () => {
           variants={slideInLeft}
           viewport={{ once: true }}
         >
+
+      <div className="absolute z-[0] w-[80%] h-[50%] right-20 bottom-20 blue__gradient" />
+
           <h3 className="text-3xl text-customCyan font-bold mb-4">Our Process</h3>
-          <p className="text-lg md:text-lg mb-4 leading-relaxed">
+          <p className="text-lg z-10 md:text-lg mb-4 leading-relaxed">
             Our process is simple yet effective. We collaborate closely with clients to understand their needs and deliver solutions that exceed expectations. From ideation to execution, we follow a structured approach to bring ideas to life.
           </p>
           <p className="text-lg md:text-lg">

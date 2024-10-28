@@ -27,3 +27,18 @@
     rgba(255, 255, 255, 0.2) 0%,  /* light center */
     rgba(44, 44, 44, 1) 40%,      /* darker grey surrounding */
     rgba(28, 28, 28, 1) 100%);}
+
+.blue__gradient {
+    background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+    filter: blur(80px);
+}
+      
+.pink__gradient {
+    background: linear-gradient(90deg, #f4c4f3 0%, #00089d 100%);
+    filter: blur(350px);
+}
+
+.white__gradient {
+    background: rgba(255, 255, 255, 0.6);
+    filter: blur(750px);
+  }
