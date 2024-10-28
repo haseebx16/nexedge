@@ -38,7 +38,7 @@ const About = () => {
           className="font-light mt-4  text-white max-w-3xl mx-auto leading-relaxed"
           variants={fadeIn}
         >
-          We are a passionate team dedicated to bringing the best web experiences to life. Our focus is on designing and developing high-performance websites with a touch of elegance. We believe in creating exceptional digital products that align with your goals.
+         At Nexedge Solution, we specialize in delivering comprehensive industrial and B2B solutions across five core fields. Our mission is to empower businesses by providing tailored, cutting-edge services designed to streamline processes, boost efficiency, and drive sustainable growth.
         </motion.p>
       </motion.div>
 
